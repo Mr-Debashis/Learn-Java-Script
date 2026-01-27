@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & JS Events </title>
+
+    <style>
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: #414141; color: aliceblue;">
+    <div id="main-container">
+        <ul id="buttons">
+            <li id="button-1"><button>Button 1</button></li>
+            <li id="button-2"><button>Button 2</button></li>
+            <li id="button-3"><button>Button 3</button></li>
+            <li id="button-4"><button>Button 4</button></li>
+            <li id="button-5"><button>Button 5</button></li>
+            <li id="button-6"><button>Button 6</button></li>
+        </ul>
+    </div>
+</body>
+<script>
+    //+++++++++++++++++++++++++++++++++++++++++++++++++ HTML & JS Events ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    /*
+    **HTML events are things that happen to HTML elements.
+
+    Examples of events:----
+    An HTML button is clicked
+    A web page has finished loading
+    The mouse moves over an element
+    A keyboard key is pressed
+    An HTML input field is changed
+
+    **Here is a list of some common HTML events:--------
+
+    onchange	------     An HTML element has been changed
+    onclick	The ------     user clicks an HTML element
+    onmouseover	------     The user moves the mouse over an HTML element
+    nmouseout	------     The user moves the mouse away from an HTML element
+    onkeydown	------     The user pushes a keyboard key
+    onload	    ------     The browser has finished loading the page
+
+    **JavaScript Events
+
+    Often, when events happen, you may want to do something.
+    When JavaScript is used in HTML pages, JavaScript can react on events.
+    JavaScript lets you execute code when events are detected.
+    HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.
+
+    In js always using ***addEventListener() is the recommended way to handle events.
+
+    **Common Mouse Events -------
+    click
+    Fires after both a mousedown and mouseup event occur on the same element with the main mouse button (usually the left).
+
+    dblclick
+    Fires after two rapid clicks on the same element.
+
+    mousedown / mouseup
+    These events fire when a mouse button is pressed down (mousedown) or released (mouseup) over an element, respectively.
+
+    mousemove
+    Fires continuously as the mouse pointer moves over an element, providing positional information (coordinates) about the cursor.
+
+    mouseover
+    Fires when the pointer moves over an element (or one of its children).
+
+    mouseout
+    Fires when the pointer leaves an element.
+
+    mouseenter
+    Similar to mouseover, but fire when the pointer enters an element, not its descendants, making it more sensible for use cases like CSS :hover   behavior.
+
+    mouseleave
+    Similar to mouseout, but fire when the pointer leaves an element, not its descendants, making it more sensible for use cases like CSS :hover behavior.
+
+    contextmenu
+    Fires when the user attempts to open the context menu, typically by right-clicking.
+
+    wheel
+    Fires when the mouse wheel is rotated, commonly used for scrolling or zooming functionality.
+
+    drag events
+    A series of events (dragstart, dragend, dragover, etc.) used for implementing drag-and-drop interfaces.
+    */
+
+
+    //This is one way to add event on html element (This is not recomended)
+    document.getElementById('button-1').onclick = function () {
+        alert("Button 1 is clicked")
+    }
+
+    //Some other method or way to add event on element by using attachEvent() ---- on jQuery
+
+    //This is the best way to add event on an element
+    document.getElementById('button-2').addEventListener('click', function () {
+        console.log("Button 2 is clicked");
+    })
+
+    //Event object & Event Propagation
+    document.getElementById('button-3').addEventListener('click', function (e) {  //**e is event object
+        console.log(e);
+    }, true) //Here we use **default false or true -- that is event propagation
+
+
+    //Here is the example of event bubbling (false) and capturing (true)
+    document.getElementById('buttons').addEventListener('click', function (e) {
+        console.log("Click inside the ul");
+    }, true)
+    document.getElementById('button-4').addEventListener('click', function (e) {
+        console.log("Button 4 is clicked");
+    }, true)
+
+    //We can change or set propagation and other things easily by using event object with methods
+    document.getElementById('button-5').addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation()
+        console.log("Button 5 is clicked");
+    }, false)
+
+
+    document.querySelector('#buttons').addEventListener('click', function (e) {
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'BUTTON') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    });
+    // removeIt.parentNode.removeChild(removeIt)  //This remove mothod is confusing but mostly use this in real project.
+
+
+
+    //Some important topics on Events-------
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+</script>
+
+</html>
