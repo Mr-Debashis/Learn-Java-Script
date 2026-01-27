@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+</head>
+
+<body>
+    <h1>JS setTimeout & setInterval</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    //+++++++++++++++++++++++++++ setTimeout Function +++++++++++++++++++++++++++++++++++++++++++
+
+    //setTimeout function is use to set a work or execute the work after some time.
+    //Method - 1
+    setTimeout(function () {
+        console.log("Debashis")
+    }, 3000)
+
+    //Method - 2
+    const demo = function () {
+        console.log("Debashis Patra")
+    }
+    setTimeout(demo, 2000);
+
+    //Change HTML element after some time
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = "Learning JavaScript"
+    }
+    const changeMe = setTimeout(changeText, 5000)
+
+    //**clearTimeout is use to stop **setTimeout
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+</script>
+
+</html>
