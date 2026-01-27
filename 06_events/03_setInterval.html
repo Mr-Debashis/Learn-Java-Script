@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval</title>
+</head>
+<body>
+    <h1>JS setInterval</h1>
+</body>
+<script>
+
+    //+++++++++++++++++++++++++++ setInterval Function ++++++++++++++++++++++++++++++++++++++++
+
+    //setInterval function is use to set a work or execute the work continuously after some time interval.
+
+    //Method - 1
+    setInterval(() => {
+        console.log('Debashis')
+    }, 2000)
+
+    //Method - 2
+    const sayDate = function(){
+        console.log('Date : ', Date.now());
+    }
+    const interval = setInterval(sayDate, 1000)
+
+    //Method - 3
+    const sayMyName = function(str){
+        console.log(str, Date.now());  //Here we can use 3rd parameater as *Hi* as str
+    }
+    const intervalId = setInterval(sayMyName, 2000, "Hi")
+
+    // clearInterval(intervalId)      //**clearInterval** is to stop **setInterval
+</script>
+</html>
