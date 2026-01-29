@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+</body>
+<script>
+
+    //The XMLHttpRequest object can be used to exchange data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+
+    //**XMLHttpRequest is use in AJAX code to send and get data from web server
+
+    //To send a request to a server, you can use the **open() and **send() methods of the XMLHttpRequest object
+
+    const requestUrl = 'https://jsonplaceholder.typicode.com/users'
+    const xhr = new XMLHttpRequest();   
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data);
+            console.log(data.followers);
+        }
+    }
+    xhr.send();
+</script>
+</html>
