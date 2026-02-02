@@ -1,7 +1,7 @@
 # ⚖️ BMI Calculator Web App
 
 A clean, lightweight, and fully client-side **BMI (Body Mass Index)
-Calculator** built using **HTML, CSS, and Vanilla JavaScript**.\
+Calculator** built using **HTML, CSS, and Vanilla JavaScript**.
 This mini-project demonstrates essential DOM manipulation, form
 handling, and real-time UI updates --- ideal for beginners improving
 their JavaScript fundamentals.
@@ -10,20 +10,20 @@ their JavaScript fundamentals.
 
 ## 🚀 Features
 
--   🧮 **Instant BMI Calculation** based on height & weight inputs\
--   ⚠️ **Input Validation** for incorrect or missing values\
--   🎨 **Simple & User-Friendly UI**\
--   📊 **BMI Weight Guide Included**\
--   ⚡ **Real-Time Result Update** without refreshing\
--   📱 Responsive layout for all devices\
+-   🧮 **Instant BMI Calculation** based on height & weight inputs
+-   ⚠️ **Input Validation** for incorrect or missing values
+-   🎨 **Simple & User-Friendly UI**
+-   📊 **BMI Weight Guide Included**
+-   ⚡ **Real-Time Result Update** without refreshing
+-   📱 Responsive layout for all devices
 -   🧩 Very clean and minimal codebase
 
 ------------------------------------------------------------------------
 
 ## 🛠️ Tech Stack
 
--   **HTML5** --- Interface structure\
--   **CSS3** --- Styling & layout design\
+-   **HTML5** --- Interface structure
+-   **CSS3** --- Styling & layout design
 -   **JavaScript (Vanilla)** --- BMI calculation logic & DOM
     manipulation
 
@@ -46,8 +46,8 @@ Users enter: - **Height** in centimeters - **Weight** in kilograms
 
 ### 2️⃣ Validation
 
-Basic validation checks ensure: - Inputs are not empty\
-- Values are numeric\
+Basic validation checks ensure: - Inputs are not empty
+- Values are numeric
 - Values are not negative
 
 ### 3️⃣ BMI Calculation
@@ -68,41 +68,41 @@ A built-in guide helps users understand their BMI category.
 
 ## ▶️ How to Run the Project
 
-1.  Download/extract the project folder\
-2.  Open **index.html** in your browser\
-3.  Enter height & weight\
-4.  Click **Calculate**\
+1.  Download/extract the project folder
+2.  Open **index.html** in your browser
+3.  Enter height & weight
+4.  Click **Calculate**
 5.  Instantly view your BMI & interpretation
 
 ------------------------------------------------------------------------
 
 ## 📌 Learning Outcomes
 
--   DOM selection and updates\
--   Handling form submissions\
--   Preventing default form behavior\
--   Numeric validation\
--   Injecting dynamic HTML\
+-   DOM selection and updates
+-   Handling form submissions
+-   Preventing default form behavior
+-   Numeric validation
+-   Injecting dynamic HTML
 -   Clean separation of HTML, CSS, and JS
 
 ------------------------------------------------------------------------
 
 ## 📌 Limitations
 
--   No backend\
--   No result history\
--   Basic validations\
+-   No backend
+-   No result history
+-   Basic validations
 -   Not medically certified
 
 ------------------------------------------------------------------------
 
 ## 💡 Future Enhancements
 
--   BMI history using LocalStorage\
--   Animated UI transitions\
--   Tailwind or Bootstrap UI\
--   Personalized health suggestions\
--   Modern responsive redesign\
+-   BMI history using LocalStorage
+-   Animated UI transitions
+-   Tailwind or Bootstrap UI
+-   Personalized health suggestions
+-   Modern responsive redesign
 -   Visual BMI indicator
 
 ------------------------------------------------------------------------
