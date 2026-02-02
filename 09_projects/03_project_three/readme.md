@@ -1,7 +1,7 @@
 # 🕒 Live Local Clock Web App
 
 A minimal, real-time **Local Clock Web Application** built using **HTML,
-CSS, and Vanilla JavaScript**.\
+CSS, and Vanilla JavaScript**.
 This project demonstrates how to work with JavaScript's `Date` object,
 dynamic DOM updates, and interval-based UI rendering --- perfect for
 beginners learning real-time web interactions.
@@ -10,20 +10,20 @@ beginners learning real-time web interactions.
 
 ## 🚀 Features
 
--   ⏱️ **Real-Time Clock Update** (refreshes every second)\
--   🌍 **Displays Accurate Local System Time**\
--   🔁 Uses JavaScript `setInterval()` for smooth updates\
--   🎨 Clean and visually appealing UI\
--   🖥️ Fullscreen centered layout\
--   📱 Fully responsive for mobile and desktop\
+-   ⏱️ **Real-Time Clock Update** (refreshes every second)
+-   🌍 **Displays Accurate Local System Time**
+-   🔁 Uses JavaScript `setInterval()` for smooth updates
+-   🎨 Clean and visually appealing UI
+-   🖥️ Fullscreen centered layout
+-   📱 Fully responsive for mobile and desktop
 -   🧩 Simple and beginner-friendly codebase
 
 ------------------------------------------------------------------------
 
 ## 🛠️ Tech Stack
 
--   **HTML5** --- Base layout and display elements\
--   **CSS3** --- Styling for dark theme and clock container\
+-   **HTML5** --- Base layout and display elements
+-   **CSS3** --- Styling for dark theme and clock container
 -   **JavaScript (Vanilla)** --- Real-time time update logic using
     `Date()` and `toLocaleTimeString()`
 
@@ -64,8 +64,8 @@ box styled via CSS.
 
 ## ▶️ How to Run
 
-1.  Download or extract the project folder\
-2.  Open **index.html** in any browser\
+1.  Download or extract the project folder
+2.  Open **index.html** in any browser
 3.  View your **live local time** updating every second
 
 *No installation or server setup required.*
@@ -74,31 +74,31 @@ box styled via CSS.
 
 ## 📌 Learning Outcomes
 
-This project teaches: - Working with JavaScript Date & Time\
-- DOM selection (`querySelector`)\
-- Interval-based rendering (`setInterval`)\
-- Dynamic HTML updates\
-- Styling centered layouts using Flexbox\
+This project teaches: - Working with JavaScript Date & Time
+- DOM selection (`querySelector`)
+- Interval-based rendering (`setInterval`)
+- Dynamic HTML updates
+- Styling centered layouts using Flexbox
 - Building simple interactive web tools
 
 ------------------------------------------------------------------------
 
 ## 📌 Limitations
 
--   Only displays system local time\
--   No timezone switching\
--   No analog clock\
+-   Only displays system local time
+-   No timezone switching
+-   No analog clock
 -   Limited UI customization
 
 ------------------------------------------------------------------------
 
 ## 💡 Future Enhancements
 
-Possible upgrades: - Timezone converter\
-- Analog clock UI\
-- Date display (Day/Month/Year)\
-- Theme switcher (Light/Dark)\
-- Stopwatch or Timer module\
+Possible upgrades: - Timezone converter
+- Analog clock UI
+- Date display (Day/Month/Year)
+- Theme switcher (Light/Dark)
+- Stopwatch or Timer module
 - Animated transitions
 
 ------------------------------------------------------------------------
