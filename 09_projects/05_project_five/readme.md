@@ -1,7 +1,7 @@
 # 🎨 Change The Background Color Web-App
 
 A simple, fun **Background Color Changer App** built using **HTML, CSS,
-and Vanilla JavaScript**.\
+and Vanilla JavaScript**.
 The app changes the background color every second using a randomly
 generated HEX color --- and you can start or stop the effect anytime.
 
@@ -9,19 +9,19 @@ generated HEX color --- and you can start or stop the effect anytime.
 
 ## 🚀 Features
 
--   🌈 Random HEX color generation\
--   ⏱️ Auto background color change every second\
--   🧠 Start & Stop controls\
--   ⚡ Uses `setInterval()` and `clearInterval()`\
--   🎨 Minimal UI\
+-   🌈 Random HEX color generation
+-   ⏱️ Auto background color change every second
+-   🧠 Start & Stop controls
+-   ⚡ Uses `setInterval()` and `clearInterval()`
+-   🎨 Minimal UI
 -   📱 Fully browser compatible
 
 ------------------------------------------------------------------------
 
 ## 🛠️ Tech Stack
 
--   **HTML5** --- Structure + buttons\
--   **CSS3** --- Optional styling support\
+-   **HTML5** --- Structure + buttons
+-   **CSS3** --- Optional styling support
 -   **JavaScript (Vanilla)** --- Logic, events, intervals
 
 ------------------------------------------------------------------------
@@ -67,36 +67,36 @@ On clicking **Stop**, the interval is cleared:
 
 ## ▶️ How to Run
 
-1.  Extract the project\
-2.  Open **index.html**\
-3.  Click **Start** → background starts changing\
+1.  Extract the project
+2.  Open **index.html**
+3.  Click **Start** → background starts changing
 4.  Click **Stop** → background freezes
 
 ------------------------------------------------------------------------
 
 ## 📌 Learning Outcomes
 
--   Generating random HEX colors\
--   DOM manipulation\
--   Using timers with `setInterval()`\
--   Stopping timers with `clearInterval()`\
+-   Generating random HEX colors
+-   DOM manipulation
+-   Using timers with `setInterval()`
+-   Stopping timers with `clearInterval()`
 -   Event-driven JavaScript programming
 
 ------------------------------------------------------------------------
 
 ## 📌 Limitations
 
--   No color transitions\
+-   No color transitions
 -   No UI feedback for current color
 
 ------------------------------------------------------------------------
 
 ## 💡 Future Enhancements
 
--   Transition fade effects\
--   Adjustable speed slider\
--   Show current HEX color\
--   Color history\
+-   Transition fade effects
+-   Adjustable speed slider
+-   Show current HEX color
+-   Color history
 -   Theme presets
 
 ------------------------------------------------------------------------
